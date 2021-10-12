@@ -1,2 +1,0 @@
-class StudentAlumniBridge < ApplicationRecord
-end
