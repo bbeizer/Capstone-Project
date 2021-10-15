@@ -15,14 +15,18 @@ ActiveRecord::Schema.define(version: 2021_09_27_002217) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "students", force: :cascade do |t|
+  create_table "courses", force: :cascade do |t|
     t.string "name"
+    t.string "code"
+    t.string "desc"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "alumni", force: :cascade do |t|
-    t.string "name"
+  create_table "instructors", force: :cascade do |t|
+    t.string "first"
+    t.string "last"
+    t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

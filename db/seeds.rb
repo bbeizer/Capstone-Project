@@ -1,5 +1,4 @@
 require 'json'
-require 'faker'
 gem 'activerecord-import'
 
 # This file should contain all the record creation needed to seed the database with its default values.
@@ -11,26 +10,38 @@ gem 'activerecord-import'
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-students = []
-columns = [:name]
+#load up course info into our course DB
+coursesfile = open("data/course.json")
+coursesjson = coursesfile.read
 
-for a in 1..50 do
-     
-  students << {name: Faker::Name.name}
-   
+parsed = JSON.parse(coursesjson)
+puts parsed[0]["name"]
+
+courses = []
+columns = [:name, :code, :desc]
+
+parsed.each do |course|
+  puts course["name"]
+  courses << {name: course["name"], code: course["code"], desc: course["description"]}
+  
 end
 
-Students.import columns, students, validate: false
+Course.import columns, courses, validate: false
 
 #load up instructor info into our instructor DB
+instructorsfile = open("data/instructor.json")
+instructorsjson = instructorsfile.read
 
-alumni = []
-columns = [:name]
+parsed = JSON.parse(instructorsjson)
+puts parsed[0]["first"]
 
-for a in 1..50 do
-     
-  alumni << {name: Faker::Name.name}
-   
+instructors = []
+columns = [:first, :last, :email]
+
+parsed.each do |instructor|
+  puts instructor["first"]
+instructors << {first: instructor["first"], last: instructor["last"], email: instructor["email"]}
+  
 end
 
-Alumni.import columns, alumni, validate: false
+Instructor.import columns, instructors, validate: false
