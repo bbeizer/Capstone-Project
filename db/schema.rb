@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 2021_09_27_002217) do
   enable_extension "plpgsql"
 
   create_table "courses", force: :cascade do |t|
-    t.string "name"
-    t.string "code"
-    t.string "desc"
+    t.string "first"
+    t.string "last"
+    t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
