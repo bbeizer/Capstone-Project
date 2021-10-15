@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :instructors
-  resources :courses
+  resources :alumni
+  resources :students
   root 'welcome#index'
   get '/about', :to => redirect('/about.html')
 
