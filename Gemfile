@@ -5,6 +5,7 @@ ruby '3.0.1'
 
 #json egm
 gem 'json'
+gem 'faker'
 gem 'activerecord-import'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
