@@ -18,7 +18,6 @@ instructorsfile = open("data/instructor.json")
 instructorsjson = instructorsfile.read
 
 parsed = JSON.parse(instructorsjson)
-puts parsed[0]["first"]
 
 instructors = []
 columns = [:first, :last, :email]
