@@ -4,6 +4,7 @@ class WelcomeController < ApplicationController
   def index
     @courses = Course.all
     @instructors = Instructor.all
+    @registrations = Registration.all
   end
 
 

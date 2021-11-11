@@ -14,13 +14,16 @@
         <a class="nav-link" href="/">Welcome</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/courses">Students<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/courses">Courses<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/instructors">Alumni</a>
+        <a class="nav-link" href="/instructors">Instructors</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link" href="/search?term=&cat=">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">LOGOUT</a>
       </li>
     </ul>
   </div>
@@ -30,15 +33,15 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1>Students</h1>
+<h1>Courses</h1>
 
 <table class="table">
   <thead>
     <tr>
-    <th scope="col">First</th>
-    <th scope="col">Last</th>
-    <th scope="col">Email</th>
-    <th colspan="3"></th>
+      <th scope="col">Name</th>
+      <th scope="col">Code</th>
+      <th scope="col">Desc</th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 
