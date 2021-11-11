@@ -1,14 +1,13 @@
 # README
 
-Name: Alexander Chang
+Name: Alex, Aarthi, Ben
 Class: Cosi 166B Capstone Software Engineering
 Date: 11/5/21
 
 
 
-Heroku App Link: https://safe-gorge-01644.herokuapp.com
+Heroku App Link: https://dashboard.heroku.com/apps/quiet-reaches-49700/access
 
-App Description: This is a simple web app that will display a list of available Brandeis Classes along with all Brandeis Instructors, along with information for each of them.
+App Description: This is a simple web app where Brandeis Students can reach out and get in contact with Brandeis Alumni to go over applying to jobs and internships.
 
-This app also allows users to create accounts, and then enroll into classes after searching for classes that they want to take.  We also allow users to unenroll from class they do not wish to take.
 
